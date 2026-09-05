@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000a22; /* Dark blueish background */
+    color: #ddd; /* Light gray text color */
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background-color: #05143f5c; /* Dark blue for form background */
+    color: #ddd; /* Light gray text color */
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.516); /* Cyanish shadow */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: #ddd; /* Light gray color for heading */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c5c5c5; /* Light gray color for labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #A9A9A9; /* Gray border color */
+    border-radius: 4px;
+    color: #dcdcdc; /* Light gray text color */
+    background-color: #1C1C1C; /* Dark gray background for inputs */
+}
+
+button[type="submit"] {
+    background-color: #05143f; /* Dark blue button background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: 1px solid #37517e; /* Adjusted border color to match the theme */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #37517e; /* Darker blue hover background color */
+    border: 1px solid #1c1c1c; /* Adjusted border color on hover */
+    box-shadow: 0 0 3px 2px #0f2e5b; /* Adjusted glowing effect on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    transition: border-color 0.3s ease-in-out; /* Smooth transition */
+    border-color: #0f2e5b; /* Darker blue border color on focus */
+}
+
+/* Optional: Fading in the form */
+form {
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 1s ease forwards; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
